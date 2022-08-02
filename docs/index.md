@@ -1,11 +1,22 @@
 # Passport
 
-Simple, unobtrusive authentication for Node.js
+> http://www.passportjs.org/
 
-app.js — vim
+对 Node.js 进行简单、不显眼的身份验证
 
-passport.authenticate('facebook');('google');('apple');('microsoft');('twitter');('linkedin');('github');('openid');
+```js title="app.js — vim"
+passport.authenticate("facebook");
+("google");
+("apple");
+("microsoft");
+("twitter");
+("linkedin");
+("github");
+("openid");
+```
 
-Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application. A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more.
+Passport 是 Node.js 的身份验证中间件。
+极其灵活和模块化，Passport 可以不引人注目地插入任何基于 express 的 web 应用程序。
+一套全面的策略支持使用用户名和密码、Facebook、Twitter 等进行身份验证。
 
-500+ Strategies Now! [VIEW ALL STRATEGIES](http://www.passportjs.org/packages/)
+现在有 500 多策略![查看所有策略](http://www.passportjs.org/packages/)

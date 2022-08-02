@@ -1,10 +1,50 @@
 site_name: Passport 文档
+
 theme:
   name: material
   language: zh
+
+markdown_extensions:
+  - pymdownx.highlight:
+      auto_title: true
+      anchor_linenums: true
+      use_pygments: true
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 nav:
   - 主页: index.md
-  - 文档: documentation.md
+  - 文档:
+      - documentation.md
+      - 用例: howtos/password.md
+      - authentication:
+          - 概述: concepts/authentication/index.md
+          - 通用: concepts/authentication/general.md
+          - 社区:
+              - Twitter: concepts/authentication/social/twitter.md
+              - Google: concepts/authentication/social/google.md
+              - Facebook: concepts/authentication/social/facebook.md
+          - 联邦:
+              - OAuth 2.0: concepts/authentication/federated/oauth2.md
+              - OAuth: concepts/authentication/federated/oauth.md
+              - OpenID: concepts/authentication/federated/openid.md
+          - SESSION: concepts/authentication/session.md
+          - API: concepts/authentication/api.md
+      - API Schemes: concepts/api-authentication.md
+      - 用户配置文件: reference/normalized-profile.md
+      - 教程:
+          - 介绍: tutorials/password/introduction.md
+          - 登录提示: tutorials/password/prompt.md
+          - 验证密码: tutorials/password/verify.md
+          - 建立会话: tutorials/password/session.md
+          - 登出: tutorials/password/logout.md
+          - 注册: tutorials/password/signup.md
   - 功能: features.md
   - 策略: strategies.md
   - 赞助商: sponsors.md

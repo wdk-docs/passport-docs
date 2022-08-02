@@ -32,5 +32,5 @@ Passport 是 Node.js 的中间件，它可以轻松实现身份验证和授权�
 与 Passport 相关的更高级别主题的解释。
 对加深理解最有用。
 
-- 身份验证
+- [身份验证](concepts/authentication.md)
 - API 身份验证
